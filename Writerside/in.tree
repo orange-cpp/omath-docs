@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="OMath Documentation"
+                 start-page="starter.md">
+
+    <toc-element topic="starter.md">
+    </toc-element>
+    <toc-element topic="Linear-Algebra.md">
+        <toc-element topic="Mat.md"/>
+        <toc-element topic="Matrix.md"/>
+        <toc-element topic="Vector4.md"/>
+        <toc-element topic="Vector3.md"/>
+        <toc-element topic="Vector2.md"/>
+    </toc-element>
+    <toc-element topic="Projectile-Predicition.md"/>
+</instance-profile>
