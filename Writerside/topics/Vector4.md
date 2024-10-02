@@ -1,22 +1,22 @@
 # Vector4 Class Documentation
 
-#### Overview:
+#### Overview
 The `Vector4` class extends the functionality of `Vector3` to represent a 4D vector by adding the `w` component. It provides various operations for handling 4D vector arithmetic, comparison, and utility functions like normalization and dot product. This class is useful in contexts such as 3D graphics (e.g., handling homogeneous coordinates), physics, and higher-dimensional space calculations.
 
-#### Namespace:
+#### Namespace
 `omath`
 
-#### Inheritance:
+#### Inheritance
 The `Vector4` class inherits from `Vector3`, retaining all functionalities related to 3D vectors while extending it to 4D by adding the `w` component.
 
-#### Constructors:
+#### Constructors
 - **`Vector4()`**: Default constructor initializes the vector with `x = 0`, `y = 0`, `z = 0`, and `w = 0`.
 - **`Vector4(float x, float y, float z, float w)`**: Constructor to initialize the vector with specific values for `x`, `y`, `z`, and `w`.
 
-#### Public Member Variables:
+#### Public Member Variables
 - `float w`: The w-coordinate of the vector.
 
-#### Public Methods:
+#### Public Methods
 
 1. **Equality operators:**
     - `bool operator==(const Vector4& src) const`: Checks if two 4D vectors are equal.
@@ -49,7 +49,7 @@ The `Vector4` class inherits from `Vector3`, retaining all functionalities relat
 5. **Utility Functions:**
     - `float Sum() const`: Returns the sum of all components (`x + y + z + w`).
 
-#### Example Usage:
+#### Example Usage
 ```c++
 omath::Vector4 v1(1.0f, 2.0f, 3.0f, 4.0f);
 omath::Vector4 v2(5.0f, 6.0f, 7.0f, 8.0f);

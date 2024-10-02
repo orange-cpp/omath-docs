@@ -1,22 +1,22 @@
 # Mat Class Documentation
 
-#### Overview:
+#### Overview
 The `Mat` class is a templated matrix class that allows creating fixed-size matrices of arbitrary dimensions, providing a wide range of matrix operations for use in mathematical computations. It supports operations like matrix initialization, element access, matrix multiplication, and the creation of common matrices such as screen, translation, orientation, and projection matrices. The class is fully constexpr where possible, making it efficient for compile-time matrix computations.
 
-#### Namespace:
+#### Namespace
 `omath`
 
-#### Template Parameters:
+#### Template Parameters
 - **`Rows`**: The number of rows in the matrix.
 - **`Columns`**: The number of columns in the matrix.
 
-#### Constructors:
+#### Constructors
 1. **`Mat()`**: Default constructor that initializes all elements to zero.
 2. **`Mat(const std::initializer_list<std::initializer_list<float>>& rows)`**: Initializes the matrix from a nested initializer list, ensuring that the dimensions match the template parameters.
 3. **`Mat(const Mat& other)`**: Copy constructor that creates a new matrix as a copy of another matrix.
 4. **`Mat(Mat&& other) noexcept`**: Move constructor for efficient resource transfer.
 
-#### Static Methods:
+#### Static Methods
 1. **`static Mat<4, 4> ToScreenMat(float screenWidth, float screenHeight)`**: Generates a 4x4 matrix that transforms points into screen coordinates based on the screen width and height.
 
 2. **`static Mat<4, 4> TranslationMat(const Vector3& diff)`**: Creates a 4x4 translation matrix using the given `Vector3` displacement.
@@ -25,7 +25,7 @@ The `Mat` class is a templated matrix class that allows creating fixed-size matr
 
 4. **`static Mat<4, 4> ProjectionMat(float fieldOfView, float aspectRatio, float near, float far)`**: Creates a perspective projection matrix using field of view, aspect ratio, and near/far clipping planes.
 
-#### Public Methods:
+#### Public Methods
 
 1. **Matrix Size and Element Access:**
     - **`constexpr size_t RowCount() noexcept`**: Returns the number of rows in the matrix.
@@ -46,10 +46,10 @@ The `Mat` class is a templated matrix class that allows creating fixed-size matr
     - **`void Clear()`**: Sets all elements in the matrix to zero.
     - **`std::string ToString() const`**: Returns a string representation of the matrix for debugging or logging purposes.
 
-#### Private Members:
+#### Private Members
 - **`std::array<float, Rows * Columns> m_data`**: Stores the elements of the matrix in a contiguous block of memory for efficient access and manipulation.
 
-#### Example Usage:
+#### Example Usage
 
 ```c++
 // Creating a 4x4 translation matrix

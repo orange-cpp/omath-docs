@@ -1,9 +1,9 @@
 # Matrix Class Documentation
 
-#### Overview:
+#### Overview
 The `Matrix` class provides a flexible and powerful way to represent and manipulate 2D matrices, primarily designed for mathematical and graphical computations. The class supports various operations like matrix multiplication, transposition, determinants, and specialized matrices such as translation and projection matrices, which are essential in 3D graphics and linear algebra.
 
-#### Namespace:
+#### Namespace
 `omath`
 
 #### Constructors:
@@ -14,7 +14,7 @@ The `Matrix` class provides a flexible and powerful way to represent and manipul
 5. **`Matrix(Matrix&& other) noexcept`**: Move constructor for efficient transfer of matrix resources.
 6. **`Matrix(size_t rows, size_t columns, const float* pRaw)`**: Initializes the matrix with data from a raw pointer array.
 
-#### Public Static Methods:
+#### Public Static Methods
 1. **`static Matrix ToScreenMatrix(float screenWidth, float screenHeight)`**: Generates a matrix that transforms points into screen coordinates based on the screen width and height.
 
 2. **`static Matrix TranslationMatrix(const Vector3& diff)`**: Creates a translation matrix that translates points by a given `Vector3` displacement.
@@ -23,7 +23,7 @@ The `Matrix` class provides a flexible and powerful way to represent and manipul
 
 4. **`static Matrix ProjectionMatrix(float fieldOfView, float aspectRatio, float near, float far)`**: Generates a perspective projection matrix using field of view, aspect ratio, and near/far clipping planes.
 
-#### Public Methods:
+#### Public Methods
 
 1. **Matrix Dimension and Access:**
     - **`size_t RowCount() const noexcept`**: Returns the number of rows in the matrix.
@@ -55,7 +55,7 @@ The `Matrix` class provides a flexible and powerful way to represent and manipul
 5. **Other Utilities:**
     - **`float Sum() const`**: Returns the sum of all elements in the matrix.
 
-#### Example Usage:
+#### Example Usage
 
 ```c++
 omath::Matrix m1(4, 4);  // Create a 4x4 matrix
@@ -75,7 +75,7 @@ omath::Matrix transpose = m1.Transpose();
 float det = m2.Determinant();
 ```
 
-#### Special Matrix Types:
+#### Special Matrix Types
 - **Screen Matrix**: Used for transforming points to screen coordinates.
 - **Translation Matrix**: Translates points in 3D space.
 - **Orientation Matrix**: Adjusts the orientation of a 3D object in space.

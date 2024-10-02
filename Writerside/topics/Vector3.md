@@ -1,22 +1,22 @@
 # Vector3 Class Documentation
 
-#### Overview:
+#### Overview
 The `Vector3` class extends the functionality of `Vector2` to represent a 3D vector, adding operations related to the z-coordinate. It includes various vector operations such as arithmetic, comparison, normalization, and transformations like forward, right, and up vector calculations commonly used in 3D graphics or physics.
 
-#### Namespace:
+#### Namespace
 `omath`
 
-#### Inheritance:
+#### Inheritance
 The `Vector3` class inherits from the `Vector2` class, meaning it retains all operations from `Vector2` and extends them to 3D space by adding the `z` component.
 
-#### Constructors:
+#### Constructors
 - **`Vector3()`**: Default constructor initializes the vector with `x = 0`, `y = 0`, and `z = 0`.
 - **`Vector3(float x, float y, float z)`**: Initializes the vector with the given `x`, `y`, and `z` values.
 
-#### Public Member Variables:
+#### Public Member Variables
 - `float z`: The z-coordinate of the vector.
 
-#### Public Methods:
+#### Public Methods
 
 1. **Equality operators:**
     - `bool operator==(const Vector3& src) const`: Checks if two 3D vectors are equal.
@@ -52,7 +52,7 @@ The `Vector3` class inherits from the `Vector2` class, meaning it retains all op
     - `Vector3 RightVector(float pitch, float yaw, float roll)`: Computes the right vector given pitch, yaw, and roll angles.
     - `Vector3 UpVector(float pitch, float yaw, float roll)`: Computes the up vector by combining right and forward vectors.
 
-#### Example Usage:
+#### Example Usage
 ```c++
 omath::Vector3 v1(1.0f, 2.0f, 3.0f);
 omath::Vector3 v2(4.0f, 5.0f, 6.0f);
