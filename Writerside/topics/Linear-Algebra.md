@@ -1,6 +1,5 @@
 # Linear Algebra
 
-
 #### Overview
 Linear algebra is a branch of mathematics focused on vectors, matrices, and operations on these structures. It forms the foundation of many critical operations in computer graphics, physics simulations, game development, and other computational applications. Vectors and matrices are essential tools for representing and transforming geometric data, such as points, directions, and transformations in 2D and 3D spaces.
 

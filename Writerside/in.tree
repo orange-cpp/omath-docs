@@ -15,5 +15,12 @@
         <toc-element topic="Matrix.md"/>
         <toc-element topic="Mat.md"/>
     </toc-element>
-    <toc-element topic="Projectile-Predicition.md"/>
+    <toc-element topic="Projectile-Predicition.md">
+        <toc-element topic="Target.md"/>
+        <toc-element topic="Engine.md"/>
+        <toc-element topic="Projectile.md"/>
+    </toc-element>
+    <toc-element topic="3D-Perspective-Projection.md">
+        <toc-element topic="Camera.md"/>
+    </toc-element>
 </instance-profile>
