@@ -7,6 +7,8 @@
                  start-page="starter.md">
 
     <toc-element topic="starter.md">
+        <toc-element topic="Getting-Started.md"/>
+        <toc-element topic="Code-Style.md"/>
     </toc-element>
     <toc-element topic="Linear-Algebra.md">
         <toc-element topic="Vector2.md"/>
